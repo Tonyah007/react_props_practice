@@ -1,3 +1,3 @@
-export default function Address() {
-    return <h3>Ademola Adetokunbo, Wuse 2, Abuja </h3>;
+export default function Address(props) {
+    return <h3>{props.address}</h3>;
 }

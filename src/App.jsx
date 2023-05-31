@@ -1,16 +1,21 @@
-import './App.css';
-import ProfilePhoto from './Component/Profile/ProfilePhoto';
-import FullName from './Component/Profile/FullName';
-import Address from './Component/Profile/Address';
-
+import "./App.css";
+import ProfilePhoto from "./PROFILE-IMAGE.jpeg";
+import Profile from "./Component/Profile/Profile";
+import FullName from "./Component/Profile/FullName";
+import Address from "./Component/Profile/Address";
 
 function App() {
   return (
-    <div className='container'>
-        <ProfilePhoto />
-        <FullName />
-        <Address />
-    </div>
+    <main> 
+      <Profile 
+        fullName="Tonia Bernard" 
+        address="Abuja, Nigeria" 
+        profession="Software Engineer" 
+        bio="Programmer,  Accountant"
+        >
+        {ProfilePhoto}
+      </Profile>
+    </main>
   );
 }
 
